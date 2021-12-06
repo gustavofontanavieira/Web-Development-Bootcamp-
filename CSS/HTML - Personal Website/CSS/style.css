@@ -1,0 +1,22 @@
+body{
+    background-color:#D4ECDD;
+}
+
+hr{
+    width: 10%;
+    border-style:  dotted none none;
+    border-width: 8px;
+    border-color: #345B63;
+}
+
+img{
+    border-radius: 100px;
+}
+
+h1, h3, th{
+    color: #345B63;
+}
+
+p, li, label, td{
+    color: #112031;
+}
