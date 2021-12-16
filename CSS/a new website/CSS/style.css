@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+}
+.topContainer {
+    background-color: #FFE6BC;
+}
+
+.middleContainer {
+    width: 200px;
+    height: 200px;
+    background-color: #C3B091;
+    position: relative;
+}
+
+.bottomContainer {
+    width: 200px;
+    height: 200px;
+    background-color: #8E806A;
+}
+
+.Te{
+    text-decoration: underline;
+}
