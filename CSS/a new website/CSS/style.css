@@ -1,23 +1,119 @@
-*{
+body{
+    text-align: center;
     margin: 0;
-}
-.topContainer {
-    background-color: #FFE6BC;
+    font-family: serif;
 }
 
-.middleContainer {
-    width: 200px;
-    height: 200px;
-    background-color: #C3B091;
+p{
+    font-family: 'Times New Roman', Times, serif;
+    color: #5584AC;
+    height: 30px;
+}
+
+.teste{
+    color: #F6F2D4;
+}
+
+.topContainer {
+    background-color: #22577E;
+    position: relative;
+    padding-top: 100px;
+    color: #F6F2D4;
+}
+
+.middle-container {
+    background-color: #F6F2D4;
+    position: relative;
+    padding: 25px;
+    
+}
+
+.bottom-container {
+    background-color: #F6F2D4;
     position: relative;
 }
 
-.bottomContainer {
-    width: 200px;
-    height: 200px;
-    background-color: #8E806A;
+.bottom-clound{
+    position: absolute;
+    left:300px;
+    bottom: 300px;
 }
 
-.Te{
-    text-decoration: underline;
+.top-clound{
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.mountain{
+    margin-top: 50px;
+}
+
+.profile-picture{
+    margin-top: 50px;
+    height:200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+.skills-image{
+    height:200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+hr{
+    margin-top: 70px;
+    width: 10%;
+    margin-bottom: 70px;
+    border-style:  dotted none none;
+    border-width: 8px;
+    border-color: #22577E;
+}
+
+.skills{
+    color: #22577E;
+}
+
+.profile{
+    color: #22577E;
+}
+
+.contact-me{
+    color: #22577E;
+}
+
+.botao{
+    height: 50px;
+    width: 100px;
+    background-color: #22577E;
+    border-radius: 10%;
+    margin: 0 auto 0 auto;
+    position: relative;
+    padding: 0.1px;
+    
+}
+
+span{
+    color:#F6F2D4;
+    display: block;
+    margin-top: 15px;
+}
+
+.therock{
+    position: fixed;
+    z-index: 1;
+    right: 25px;
+    bottom: 25px;
+    padding: 0.1px;
+}
+
+.therockimage{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+}
+
+.ajuda{
+    color: black;
 }
