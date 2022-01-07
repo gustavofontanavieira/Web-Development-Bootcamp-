@@ -30,6 +30,17 @@
     color: #ff4c68;
 }
 
+/* PRICING SECTION */
+/* #pricing{
+    padding: 9% 10%;
+    text-align: center;
+}
+
+.row-pricing{
+    justify-content: space-between;
+} */
+
+
 /* ------------------------------------------------------------------------------------------------ */
 /* Edições padrão dos vídeos */
 h1{
@@ -123,3 +134,13 @@ h2{
     margin:20px 20px 50px;  
 }
 
+
+/* PRICING SECTION */
+#pricing{
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-col{
+    padding: 3% 2%;
+}
