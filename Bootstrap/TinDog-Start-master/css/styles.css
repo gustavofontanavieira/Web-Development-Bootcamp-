@@ -1,19 +1,19 @@
 /* edições minhas ou desafios */
-#features{
-    text-align: center;
-    padding: 9% 10%;
-}
+/* #features{
+    background-color: #fff;
+    position: relative;
+} */
 
 .item-descricao{
     margin-top: 6%;
 }
 
-.titulo-tamanho{
+/* .titulo-tamanho{
     font-size: 1.5rem;
     font-family: Montserrat;
     font-weight: bold;
     margin-top: 1rem;
-}
+} */
 
 .paragrafo-features{
     color: #8f8f8f;
@@ -22,13 +22,39 @@
 
 }
 
+/* animações de tamanho */
 .fas{
     color: #ef8172;
+    transition: transform 250ms ease;
+    margin-bottom: 1rem;
 }
 
 .fas:hover{
     color: #ff4c68;
+    transform: scale(1.1);
 }
+
+.fab:hover{
+    transform: scale(1.1);
+}
+
+.far:hover{
+    transform: scale(1.1);
+}
+
+.btn{
+    transition: transform 500ms ease;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.nav-link:hover{
+    transform: scale(1.05);
+}
+
+
 
 /* PRICING SECTION */
 /* #pricing{
@@ -39,27 +65,58 @@
 .row-pricing{
     justify-content: space-between;
 } */
-
-
 /* ------------------------------------------------------------------------------------------------ */
 /* Edições padrão dos vídeos */
-h1{
+body{
+    font-family: "Montserrat";
+    text-align: center;
+} 
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Montserrat;
+}
+
+p{
+    color: #8f8f8f;
+}
+
+
+.container-fluid{
+    padding: 7% 15%;
+}
+
+/* HEADINGS */
+.big-heading{
     font-family: "Montserrat";
     font-size: 3.5rem;
     line-height: 1.5;
 }
 
-.container-fluid{
-    padding: 3% 15%;
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
+
+/* TITLE SECTION */
 #title{
     background-color: #ff4c68;
     color: #fff;
+    text-align: left;
 }
 
-body{
-    font-family: "Montserrat";
+#title .container-fluid{
+    padding: 3% 15% 7%;
+}
+
+/* FEATURE SECTION */
+#features{
+    background-color: #fff;
+    position: relative;
+}
+
+.feature-title{
+    font-size: 1.5rem;
 }
 
 /* Navigation bar */
@@ -80,6 +137,8 @@ body{
 .nav-link{
     font-size: 1.2rem;
     font-family: Montserrat;
+
+    transition: transform 500ms ease;
 }
 
 /* Downloads buttons */
@@ -87,31 +146,28 @@ body{
     margin: 5% 3% 5% 0%;
 }
 
-
 /* Title Image */
 .title-img{
     width: 60%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
 }
 
-/* ------------------------------------------------------------------------------------------------ */
+.img{
+    position: relative;
+}
+
 /* TESTIMONIALS section */
 #testimonials{
-    text-align: center;
     background-color: #ef8172;
     color: #fff;
 }
 
-h2{
-    font-family: Montserrat;
+.testimonial-text{
     font-size: 3rem;
     line-height: 1.5;
 }
-
-.carousel-item{
-    padding: 7% 15%;
-}
-
 
 /* testimonial images */
 .testimonial-image{
@@ -121,11 +177,10 @@ h2{
 }
 
 
-/* ------------------------------------------------------------------------------------------------ */
+
 /* PESS SECTION */
 #press{
     background-color: #ef8172;
-    text-align:  center;
     padding-bottom: 3%;
 }
 
@@ -138,9 +193,51 @@ h2{
 /* PRICING SECTION */
 #pricing{
     padding: 100px;
-    text-align: center;
+}
+
+.price-text{
+    font-size: 3rem;
+    line-height:1.5;
 }
 
 .pricing-col{
-    padding: 3% 2%;
+    margin-top: 2rem;
+}
+
+
+/* cta */
+#cta{
+    background-color: #ff4c68;
+    color: #fff;
+    font-family: Montserrat;
+}
+
+
+/* FOOTER SECTION */
+#footer{
+    background-color: #fff;
+    padding: 10%;
+}
+
+.footer-paragraph{
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.icons-footer{
+    margin: 0 0.6rem;
+}
+
+
+/* media query creation */
+@media (max-width: 1028px){
+    #title{
+        text-align: center;
+    }
+    
+    
+    .title-img{
+        position: static;
+        transform: rotate(0)
+    }
 }
