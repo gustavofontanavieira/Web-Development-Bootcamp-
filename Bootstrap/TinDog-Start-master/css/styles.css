@@ -85,6 +85,16 @@ p{
     padding: 7% 15%;
 }
 
+/* SECTIONS */
+.colored-section{
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+.white-section{
+    background-color: #fff;
+}
+
 /* HEADINGS */
 .big-heading{
     font-family: "Montserrat";
@@ -99,14 +109,9 @@ p{
 
 
 /* TITLE SECTION */
-#title{
-    background-color: #ff4c68;
-    color: #fff;
-    text-align: left;
-}
-
 #title .container-fluid{
     padding: 3% 15% 7%;
+    text-align: left;
 }
 
 /* FEATURE SECTION */
@@ -161,7 +166,6 @@ p{
 /* TESTIMONIALS section */
 #testimonials{
     background-color: #ef8172;
-    color: #fff;
 }
 
 .testimonial-text{
@@ -202,14 +206,6 @@ p{
 
 .pricing-col{
     margin-top: 2rem;
-}
-
-
-/* cta */
-#cta{
-    background-color: #ff4c68;
-    color: #fff;
-    font-family: Montserrat;
 }
 
 
