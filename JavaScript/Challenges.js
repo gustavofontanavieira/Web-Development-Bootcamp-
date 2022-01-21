@@ -83,6 +83,30 @@ function main(){
   
   getMilk(15);
 
+
+  //atualizado
+  function getMilk (money, costPerBottle) {   
+   console.log("Buy " +calcBottles(money, costPerBottle)+ " Bottles");
+     //output do troco 
+   return calcChange(money, costPerBottle);
+   }
+   
+ 
+ function calcBottles ( startingMoney, costPerBottle ) {
+     var numberOfBottles = Math.floor ( startingMoney / costPerBottle );
+ 
+     return numberOfBottles;
+ }
+ 
+ 
+ function calcChange ( startingAmount, costPerBottle) {
+     var change = startingAmount % costPerBottle;
+     return change;
+ }
+   
+   console.log( "Hello master, here is your " +getMilk(6, 3)+ " change");
+ 
+
   
  /*********************** CHALLENGE 6 ***********************/
 //Criar uma função que calcula a quantidade de meses, anos e semanas que a pessoa possui interpretando que vivemos até os 90 anos
@@ -101,5 +125,16 @@ function lifeInWeeks(age) {
         
     /*************Don't change the code below**********/
     }
+
+ /*********************** CHALLENGE 7 ***********************/
+ //BMI calculator, your challenge is to create a function that takes weight and height.2 and gives the calculated BMI
+ function bmiCalculator( weight, height ) {
+   //Math.pow(), trabalha com 2 valores,  base e expoente, é uma função matemática que trabalha com números elevados
+   return Math.round ( weight / Math.pow(height, 2) );
+};
+
+
+
+
     
     
