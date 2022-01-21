@@ -133,7 +133,33 @@ function lifeInWeeks(age) {
    return Math.round ( weight / Math.pow(height, 2) );
 };
 
+ /*********************** CHALLENGE 8 ***********************/
+ //love calculator, criar 2 prompt pra perguntar o nome das duas pessoas e retornar o valor em porcentagem utilizando a função Math.random()
+//do JavaScript
+prompt ( "First person name: " );
+prompt ( "Second person name: " );
 
+function calculate(){
+   var porcentagem = Math.random();
+   porcentagem = porcentagem * 100;
+   porcentagem = Math.floor(porcentagem) + 1;
+   alert ( "chance de darem certos: " +porcentagem+ "%" )
+
+}
+
+
+/*********************** CHALLENGE 9 ***********************/
+//BMI calculator with if and else
+function bmiCalculator (weight, height) {
+   var bmi = weight / (Math.pow(height, 2));
+   if ( bmi < 18.5 ) {
+       return "Your BMI is " +bmi+ ", so you are underweight.";
+   } else if ( bmi > 18.5 && bmi <= 24.9) {
+       return "Your BMI is " +bmi+ ", so you have a normal weight.";
+   } else {
+       return "Your BMI is " +bmi+ ", so you are overweight.";
+   }
+}
 
 
     
