@@ -161,6 +161,33 @@ function bmiCalculator (weight, height) {
    }
 }
 
-
-    
-    
+/*********************** CHALLENGE 10 ***********************/
+//desafio de leap year
+function isLeap(year) {
+    /**************Don't change the code above****************/    
+        //Write your code here.    
+        //True ou True
+        if  ((year % 4 !== 0) || (year % 4 === 0  &&  year % 100 === 0 && year % 400 !== 0)) {
+             return "Not leap year.";
+        }
+        else{
+           return "Leap year."
+        }
+    /**************Don't change the code below****************/    
+    }
+//Angela fez oq anteriormente eu tinha feito, maldito ponto final que precisava pra funcionar:
+function isLeap(year) {
+    if ( year % 4 === 0 ) {
+        if ( year % 100 === 0 ) {
+            if ( year % 400 === 0 ) {
+                return "Leap year."
+            } else {
+                return "Not leap year."
+            }
+        } else {
+            return "Leap year."
+        }
+    } else {
+        return "Not leap year."
+    }
+}
