@@ -191,3 +191,115 @@ function isLeap(year) {
         return "Not leap year."
     }
 }
+
+
+
+/*********************** CHALLENGE 11 ***********************/
+//Adicionar ao array 100 valores chamando uma função, criação da função/brincadeira fizzBuzz
+//Se o número for divisivel por 3 ele tem que retornar "Fizz" e se divisível por 5 retornar "Buzz" e se ambos, retornar "FizzBuzz"
+var output = [];
+
+function fizzBuzz() {
+    for ( i = 1; i <= 100; i++) {
+        if ( i % 3  == 0) {
+            output.push( "Fizz" );
+        } else if ( i % 5 == 0) {
+            output.push( "Buzz" );
+        } else {
+            output.push( i );
+        }
+    }
+    console.log(output);
+}
+
+fizzBuzz();
+
+/*********************** CHALLENGE 12 ***********************/
+//Criar uma função que chame array já criado como parâmetro e então escolha um nome aleatório para pagar o lanche de hoje
+function whosPaying(names) {
+    /******Don't change the code above*******/
+        //Write your code here.
+        var nomes = names.length; //será atribuido a variável nome o tamanho do array
+        var sorteio = Math.floor( Math.random() * nomes ); // será atribuído a variável sorteio um número aleatório que vai até a quantidade de arrays que é arredondado pelo Math.floor()
+        return names[sorteio] + " is going to buy lunch today!" ; //no retorno pegamos o número aleatório e chamamos ele dentro do array para retornar o nome aleatório 
+    /******Don't change the code below*******/    
+}
+
+
+/*********************** CHALLENGE 13 ***********************/
+//Utilizando While, escreva uma função que escreva a letra da Música 99 bottles of beer;
+var bottles = 99;
+function bottlesOfBeer() {
+    while ( bottles >= 1 ) {
+        if ( bottles > 1 ) {
+            console.log( bottles + " bottles of beer on the wall, " +bottles+ " bottles of beer.");
+            bottles--;
+            console.log( "Take one down and pass it around, " +bottles+ " bottles of beer on the wall" );
+        } else {
+            console.log( bottles + " bottle of beer on the wall, " +bottles+ " bottle of beer.");
+            bottles--;
+            console.log( "Take one down and pass it around, no more bottles of beer on the wall." );
+        }
+    }
+}
+
+bottlesOfBeer();
+
+//Código da Angela nesse desafio:
+var numberOfBottles = 99
+while (numberOfBottles >= 0) {
+    var bottleWord = "bottle";
+    if (numberOfBottles === 1) {
+        bottleWord = "bottles";
+    } 
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
+    console.log(numberOfBottles + " " + bottleWord + " of beer,");
+    console.log("Take one down, pass it around,");
+	numberOfBottles--;
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
+}
+
+/*********************** CHALLENGE 14 ***********************/
+//Criar uma função com array que cria o cálculo de fibonacci, soma dos dois números anteriores é igual ao próximo
+function fibonacciGenerator (n) {
+    //Do NOT change any of the code above 👆
+        //Write your code here:
+        var repeticao = n;
+        var output = [];
+        var proximo;
+        var num1 = 0;
+        var num2 = 1;
+            if ( repeticao === 1 ) {
+                output = [0]
+            } else if ( repeticao == 2) {
+                output = [0, 1];
+            } else { 
+                output = [0, 1];
+                for (var i = 3; i <= repeticao; i++ ) {
+                    proximo =  num1 + num2;
+                    num1 = num2;
+                    num2 = proximo;
+                    output.push(proximo);
+                }
+            }
+        //Return an array of fibonacci numbers starting from 0.
+         return output;
+    //Do NOT change any of the code below 👇
+    }
+
+output = fibonacciGenerator();
+console.log(output);
+
+//Código da Angela
+var output = [];
+if ( n == 1 ) {
+    output = [0]
+} else if ( repeticao == 2 ) {
+    output = [0, 1];
+} else {
+    output = [0, 1];
+
+    for ( var i = 2; i < n; i++) {
+        output.push(output[output.length - 2 ] + output[output.lenght - 1]);
+    }
+}
