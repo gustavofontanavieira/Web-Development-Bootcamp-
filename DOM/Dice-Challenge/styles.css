@@ -40,22 +40,37 @@ footer {
 
 }
 
-@media (max-width: 1028px){
+@media (min-width: 300px ) AND (max-width: 800px){
+
+  body{
+    display: inline;
+  }
+
   h1 {
-    margin: 30px;
   font-family: 'Lobster', cursive;
   text-shadow: 3px 0 #232931;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #4ECCA3;
   }
 
   img {
-    width: 40%;
+    width: 55%;
+    height: 55%;
   }
 
   .dice {
     text-align: center;
-    display: inline-block;
   }
 
+  footer {
+    margin-top: 5%;
+    color: #EEEEEE;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2rem;
+  }
+
+  p{
+    font-size: 1.5rem;
+  }
 }
